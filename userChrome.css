@@ -1,0 +1,20 @@
+/* we want everything to be 20px so my eyes dont hurt */
+* {
+  font-size: 20px !important;
+}
+
+/* larger font size resulted in artifacts when hovering mail list  */
+treechildren::-moz-tree-row {
+  height: 28px !important;
+}
+
+/* search results background was white in a dark theme */
+#main-column {
+  background: var(--deepdark-dark-ash-color) !important;
+  color: var(--deepdark-content-color) !important;
+}
+
+/*  words in search that are too long weren't wrapped */
+.message .message-body {
+  overflow-wrap: break-word;
+}
